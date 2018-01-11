@@ -2,9 +2,9 @@
 import json
 from pprint import pprint
 
-json_data=open('Insomnia.json')
+json_data=open('your_file.json')
 data = json.load(json_data)
-
+#Print all content of fields called name.
 for i in range (0, len (data['resources'])):
     print data['resources'][i]['name']
 
